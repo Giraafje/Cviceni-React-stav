@@ -7,10 +7,11 @@ import { useCasVSekundach } from './hodiny'
 
 export const ZaverecnyBonus3 = () => {
 	const casVSekundach = useCasVSekundach()
+	const displayTime = new Date(casVSekundach * 1000).toISOString().slice(11, 19);
 
 	return (
 		<>
-			Čas právě teď: <b>{casVSekundach}</b>
+			Čas právě teď: <b>{displayTime}</b>
 		</>
 	)
 }

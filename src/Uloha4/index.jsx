@@ -32,7 +32,7 @@ export const Uloha4 = () => {
 
 	return (
 		<div className="carousel">
-			<button onClick={handleChangeImageLeft} disabled={index < 1} className="carousel__predchozi" aria-label="předchozí">
+			<button onClick={handleChangeImageLeft} disabled={index === 0} className="carousel__predchozi" aria-label="předchozí">
 				←
 			</button>
 			<div className="carousel__media">
